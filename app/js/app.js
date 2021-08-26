@@ -47,6 +47,15 @@ const Floaty = () => {
 	});
 }
 
+// Открыть скрыть
+const showHide = () => {
+	const button = document.querySelector('#togglerLink');
+	button.addEventListener('click', e => {
+		button.classList.toggle('o2k-switch-state')
+		document.querySelector('.js-o2k-toggledContent').classList.toggle('hide')
+	})
+}
+
 import IMask from 'imask';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -57,4 +66,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	let mask = IMask(element, maskOptions);
 
 	Floaty()
+	showHide()
 })

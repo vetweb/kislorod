@@ -31,4 +31,10 @@
     .o2k-link__icon-right {
         margin-left: $indent-xs;
     }
+
+    &.o2k-switch-state {
+        .o2k-icon {
+            transform: rotate(180deg);
+        }
+    }
 }

@@ -92,3 +92,9 @@ input[type=number] {
 .o2k-no-indent {
     margin-bottom: 0;
 }
+
+.o2k-toggledContent {
+    &.hide {
+        display: none;
+    }
+}
