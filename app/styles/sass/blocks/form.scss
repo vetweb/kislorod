@@ -1,7 +1,6 @@
 .form {
-
     $input-height-lg: 54px;
-    $input-height-sm: 54px;
+    $input-height-sm: 34px;
 
     &__field {
         position: relative;
@@ -11,13 +10,19 @@
         position: absolute;
         top: 0;
         left: 20px;
-        height: $input-height-lg;
+        height: $input-height-sm;
         @include flex-base(center, flex-start);
-        font-size: 15px;
-        line-height: 18px;
+        font-size: 12px;
+        line-height: 14px;
         pointer-events: none;
         color: $c-text-second;
         @include tr-base();
+
+        @include sm {
+            height: $input-height-lg;
+            font-size: 15px;
+            line-height: 18px;
+        }
     }
 
     &__important {
@@ -26,13 +31,19 @@
 
     &__input {
         position: relative;
-        height: $input-height-lg;
+        height: $input-height-sm;
         width: 100%;
-        padding: 0 20px;
+        padding: 0 18px;
         appearance: none;
         border: 1px solid $c-border;
+        border-radius: 3px;
         outline: none;
         @include tr-base;
+
+        @include sm {
+            padding: 0 24px;
+            height: $input-height-lg;
+        }
 
         &:focus {
             border-bottom-color: $c-border;

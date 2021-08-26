@@ -11,9 +11,9 @@
         font-size: 14px;
         margin-bottom: 10px;
 
-        @include md-up {
-            margin-bottom: 4px;
+        @include sm {
             font-size: 16px;
+            margin-bottom: 4px;
         }
     }
 

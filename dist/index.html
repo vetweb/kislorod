@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>Mainpage</title>
+    <meta name="description" content="">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <meta property="og:image" content="images/dist/logo.png">
+    <meta name="theme-color" content="#fff200">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+<div style="display: none;">
+    <svg id="custom-sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <symbol viewBox="0 0 12 8" fill="currentColor" id="i-arrow-xs">
+            <path d="M1.24149 7.52345C0.995002 7.78444 0.583612 7.79619 0.322626 7.54971C0.0616388 7.30322 0.0498848 6.89183 0.296372 6.63084L1.24149 7.52345ZM5.9997 1.53869L5.52714 1.09238C5.64993 0.962367 5.82087 0.888687 5.9997 0.888687C6.17853 0.888687 6.34947 0.962367 6.47226 1.09238L5.9997 1.53869ZM11.703 6.63084C11.9495 6.89183 11.9378 7.30322 11.6768 7.54971C11.4158 7.79619 11.0044 7.78444 10.7579 7.52345L11.703 6.63084ZM0.296372 6.63084L5.52714 1.09238L6.47226 1.98499L1.24149 7.52345L0.296372 6.63084ZM6.47226 1.09238L11.703 6.63084L10.7579 7.52345L5.52714 1.98499L6.47226 1.09238Z"             />
+        </symbol>
+        <symbol viewBox="0 0 24 24" fill="currentColor" id="i-close">
+            <path d="M18 6L6 18" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 6L18 18" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol viewBox="0 0 12 10" fill="currentColor" id="i-check">
+            <path d="M11 1L4.375 9L1 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+    </svg>
+</div>
+
+<main>
+    <div class="container">
+        <div class="cart">
+            <form action="">
+                <div class="form">
+                    <div class="form__field">
+                        <label class="form__label" for="inp1">
+                            Имя и Фамилия по паспорту <span class="form__important">*</span>
+                        </label>
+                        <input class="form__input" id="inp1" type="text">
+                    </div>
+                </div>
+            </form>
+
+            <div class="cart-list-wrapper">
+                <div class="title">
+                    <span>Товары</span>
+                    <span class="title__caption link title__text-left js-toggler">
+                        <span class="link__text">Свернуть</span>
+                        <i class="icon link__icon-right">
+                            <svg class="icon__arrow">
+                                <use xlink:href="#i-arrow-xs"></use>
+                            </svg>
+                        </i>
+                    </span>
+                </div>
+                <div class="cart-list">
+                    <div class="cart-item">
+                        <div class="cart-item__content">
+                            <picture class="cart-item__img">
+                                <source type="image/png" media="(min-width: 1921px)" srcset="images/cat-1.png">
+                                <img src="images/cat-1.png">
+                            </picture>
+                            <div class="cart-item__info">
+                                <a href="##" class="link link--inner cart-item__info-title">
+                                    <span class="link__text">Рюкзак Xiaomi Blade, серый</span>
+                                </a>
+                                <div class="properties"></div>
+                                <div class="properties-item">
+                                    <div class="properties-item__label">
+                                        Артикул:
+                                    </div>
+                                    <div class="properties-item__caption">
+                                        123456789
+                                    </div>
+                                </div>
+                                <div class="properties-item">
+                                    <div class="properties-item__label">
+                                        Цвет:
+                                    </div>
+                                    <div class="properties-item__caption">
+                                        Серый
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="price">
+                                <div class="price__current">4900 руб.</div>
+                                <div class="price__old">4 700 руб.</div>
+                            </div>
+                            <div class="qt-form">
+                                <form id='myform' method='POST' action='#'>
+                                    <div class="qt-form__fields">
+                                        <input type='button' value='-' class='qt-form__btn' field='quantity'/>
+                                        <input type='text' name='quantity' value='0' class='qt-form__input'/>
+                                        <input type='button' value='+' class='qt-form__btn' field='quantity'/>
+                                    </div>
+                                    <span class="qt-form__price">1 450 руб./шт</span>
+                                </form>
+                            </div>
+                            <div class="cart-item__delete">
+                                <i class="icon">
+                                    <svg class="icon__close">
+                                        <use xlink:href="#i-close"></use>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                    <div class="cart-item__content">
+                        <picture class="cart-item__img">
+                            <source type="image/png" media="(min-width: 1921px)" srcset="images/cat-1.png">
+                            <img src="images/cat-1.png">
+                        </picture>
+                        <div class="cart-item__info">
+                            <a href="##" class="link link--inner cart-item__info-title">
+                                <span class="link__text">Рюкзак Xiaomi Blade, серый</span>
+                            </a>
+                            <div class="properties"></div>
+                            <div class="properties-item">
+                                <div class="properties-item__label">
+                                    Артикул:
+                                </div>
+                                <div class="properties-item__caption">
+                                    123456789
+                                </div>
+                            </div>
+                            <div class="properties-item">
+                                <div class="properties-item__label">
+                                    Цвет:
+                                </div>
+                                <div class="properties-item__caption">
+                                    Серый
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price">
+                            <div class="price__current">4900 руб.</div>
+                            <div class="price__old">4 700 руб.</div>
+                        </div>
+                        <div class="qt-form">
+                            <form id='myform' method='POST' action='#'>
+                                <div class="qt-form__fields">
+                                    <input type='button' value='-' class='qt-form__btn' field='quantity'/>
+                                    <input type='text' name='quantity' value='0' class='qt-form__input'/>
+                                    <input type='button' value='+' class='qt-form__btn' field='quantity'/>
+                                </div>
+                                <span class="qt-form__price">1 450 руб./шт</span>
+                            </form>
+                        </div>
+                        <div class="cart-item__delete">
+                            <i class="icon">
+                                <svg class="icon__close">
+                                    <use xlink:href="#i-close"></use>
+                                </svg>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="checkbox">
+                    <input class="custom-checkbox" type="checkbox" id="color-2" name="color-2" value="red">
+                    <label for="color-2">Red</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+<script src="js/app.min.js"></script>
+
+</body>
+</html>

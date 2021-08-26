@@ -19,6 +19,16 @@
         padding: 0 15px;
         margin-bottom: 14px;
 
+        &:last-of-type,
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:first-of-type,
+        &:first-child {
+            margin-bottom: 14px;
+        }
+
         @include md-up {
             margin-bottom: 0;
         }
@@ -35,6 +45,15 @@
 
         &--full {
             width: 100%;
+        }
+
+        &--no-indent {
+            margin: 0;
+
+            &:first-of-type,
+            &:first-child {
+                margin: 0;
+            }
         }
     }
 

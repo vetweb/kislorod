@@ -9,13 +9,17 @@
 
     &__item {
         width: 100%;
-        padding: 18px 23px 18px 23px;
+        padding: 16px;
         margin-bottom: 20px;
         border: 1px solid $c-border;
         border-radius: 3px;
         font-weight: 400;
         cursor: pointer;
         @include tr-base;
+
+        @include sm {
+            padding: 18px 23px 18px 23px;
+        }
 
         &:last-of-type,
         &:last-child {

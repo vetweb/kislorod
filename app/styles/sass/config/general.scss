@@ -21,6 +21,16 @@ input, textarea {
     }
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -29,8 +39,23 @@ input, textarea {
 }
 
 .fz-15 {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 11px;
+    line-height: 13px;
+
+    @include sm {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+.fz-16 {
+    font-size: 14px;
+    line-height: 16px;
+
+    @include sm {
+        font-size: 16px;
+        line-height: 19px;
+    }
 }
 
 .fz-13 {
@@ -39,10 +64,20 @@ input, textarea {
 }
 
 .section {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+
+    @include sm {
+        margin-bottom: 50px;
+    }
+
+    @include md-up {
+        margin-bottom: 60px;
+    }
 
     &--sm {
-        max-width: $content-sm;
+        @include md-up {
+            max-width: $content-sm;
+        }
     }
 
     &--flex-between {
@@ -52,4 +87,8 @@ input, textarea {
 
 .text-accent {
     color: $c-text-second;
+}
+
+.no-indent {
+    margin-bottom: 0;
 }

@@ -1,10 +1,18 @@
 .title {
-    margin-bottom: 20px;
-    font-size: $fz-24;
-    line-height: $lh-29;
+    margin-bottom: $indent-sm;
+    font-size: 16px;
+    line-height: 19px;
     font-weight: 300;
 
+    @include sm {
+        margin-bottom: $indent-md;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
     @include md-up {
+        font-size: 24px;
+        line-height: 29px;
         margin-bottom: $indent-lg;
     }
 
@@ -13,8 +21,13 @@
     }
 
     &__caption {
-        font-size: 15px;
-        line-height: 18px;
+        font-size: 13px;
+        line-height: 16px;
+
+        @include sm {
+            font-size: 15px;
+            line-height: 18px;
+        }
     }
 
     &__between {
