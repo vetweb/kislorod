@@ -35,7 +35,7 @@ const Floaty = () => {
 
 		labelEl.setAttribute('for', inputId);
 		labelEl.innerHTML = placeholder;
-		labelEl.classList.add('form__label');
+		labelEl.classList.add('o2k-form__label');
 
 		input.floatingLabel = labelEl;
 		input.parentNode.appendChild(labelEl);
@@ -50,9 +50,11 @@ const Floaty = () => {
 import IMask from 'imask';
 
 document.addEventListener('DOMContentLoaded', () => {
-	// let element = document.getElementsByClassName('js-phone');
-	// let maskOptions = {
-	// 	mask: '+{7}(000)000-00-00'
-	// };
-	// let mask = IMask(element, maskOptions);
+	let element = document.querySelector('.js-phone');
+	let maskOptions = {
+		mask: '+{7}(000)000-00-00'
+	};
+	let mask = IMask(element, maskOptions);
+
+	Floaty()
 })
