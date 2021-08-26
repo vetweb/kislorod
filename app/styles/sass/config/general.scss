@@ -31,14 +31,14 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-.container {
+.o2k-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: content-box;
 }
 
-.fz-15 {
+.o2k-fz-15 {
     font-size: 11px;
     line-height: 13px;
 
@@ -48,7 +48,7 @@ input[type=number] {
     }
 }
 
-.fz-16 {
+.o2k-fz-16 {
     font-size: 14px;
     line-height: 16px;
 
@@ -58,12 +58,12 @@ input[type=number] {
     }
 }
 
-.fz-13 {
+.o2k-fz-13 {
     font-size: 13px;
     line-height: 16px;
 }
 
-.section {
+.o2k-section {
     margin-bottom: 30px;
 
     @include sm {
@@ -85,10 +85,10 @@ input[type=number] {
     }
 }
 
-.text-accent {
+.o2k-text-accent {
     color: $c-text-second;
 }
 
-.no-indent {
+.o2k-no-indent {
     margin-bottom: 0;
 }

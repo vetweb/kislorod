@@ -1,4 +1,4 @@
-.cart-item {
+.o2k-cart-item {
     position: relative;
     max-width: $content-md;
     border: 1px solid $c-border;
@@ -44,9 +44,19 @@
 
     &__info-title {
         display: inline-block;
-        font-size: 16px;
+        font-size: 13px;
         line-height: 20px;
         margin-bottom: $indent-xs;
+
+        @include sm {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        @include md-up {
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 
     &__delete {

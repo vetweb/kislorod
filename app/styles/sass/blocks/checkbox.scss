@@ -1,24 +1,24 @@
-.checkbox__input {
+.o2k-checkbox__input {
     position: absolute;
     z-index: -1;
     opacity: 0;
 }
 
-.checkbox__label {
+.o2k-checkbox__label {
     font-size: 13px;
     line-height: 16px;
     color: $c-text-second;
 }
 
-/* для элемента .checkbox__label, связанного с .checkbox__input */
-.checkbox__input + .checkbox__label {
+/* для элемента .o2k-checkbox__label, связанного с .o2k-checkbox__input */
+.o2k-checkbox__input + .o2k-checkbox__label {
     display: inline-flex;
     align-items: center;
     user-select: none;
 }
 
-/* создание в .checkbox__label псевдоэлемента before со следующими стилями */
-.checkbox__input + .checkbox__label::before {
+/* создание в .o2k-checkbox__label псевдоэлемента before со следующими стилями */
+.o2k-checkbox__input + .o2k-checkbox__label::before {
     content: '';
     display: inline-block;
     width: 24px;
@@ -34,35 +34,35 @@
 }
 
 /* стили при наведении курсора на checkbox */
-.checkbox__input:not(:disabled):not(:checked) + .checkbox__label:hover::before {
+.o2k-checkbox__input:not(:disabled):not(:checked) + .o2k-checkbox__label:hover::before {
     border-color: #b3d7ff;
 }
 
 /* стили для активного чекбокса (при нажатии на него) */
-.checkbox__input:not(:disabled):active + .checkbox__label::before {
+.o2k-checkbox__input:not(:disabled):active + .o2k-checkbox__label::before {
     background-color: #b3d7ff;
     border-color: #b3d7ff;
 }
 
 /* стили для чекбокса, находящегося в фокусе */
-.checkbox__input:focus + .checkbox__label::before {
+.o2k-checkbox__input:focus + .o2k-checkbox__label::before {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
-.checkbox__input:focus:not(:checked) + .checkbox__label::before {
+.o2k-checkbox__input:focus:not(:checked) + .o2k-checkbox__label::before {
     border-color: #80bdff;
 }
 
 /* стили для чекбокса, находящегося в состоянии checked */
-.checkbox__input:checked + .checkbox__label::before {
+.o2k-checkbox__input:checked + .o2k-checkbox__label::before {
     border-color: #0b76ef;
     background-color: #0b76ef;
     background-image: url("../images/icons/i-check.svg");
 }
 
 /* стили для чекбокса, находящегося в состоянии disabled */
-.checkbox__input:disabled + .checkbox__label::before {
+.o2k-checkbox__input:disabled + .o2k-checkbox__label::before {
     background-color: #e9ecef;
 }
 

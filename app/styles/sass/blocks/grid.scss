@@ -1,4 +1,4 @@
-.grid {
+.o2k-grid {
     &__row {
         @include flex-base();
         flex-wrap: wrap;
@@ -56,6 +56,4 @@
             }
         }
     }
-
-
 }

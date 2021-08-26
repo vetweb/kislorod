@@ -1,4 +1,4 @@
-.link {
+.o2k-link {
     position: relative;
     color: $c-accent;
     text-decoration: none;
@@ -11,24 +11,24 @@
     }
 
     &:hover {
-        .link__text {
+        .o2k-link__text {
             border-bottom-color: transparent;
         }
     }
 
     &--inner {
-        .link__text {
+        .o2k-link__text {
             border-bottom-color: transparent;
         }
 
         &:hover {
-            .link__text {
+            .o2k-link__text {
                 border-bottom-color: $c-accent;
             }
         }
     }
 
-    .link__icon-right {
+    .o2k-link__icon-right {
         margin-left: $indent-xs;
     }
 }
