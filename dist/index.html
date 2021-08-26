@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>Mainpage</title>
+    <meta name="description" content="">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <meta property="og:image" content="images/dist/logo.png">
+    <meta name="theme-color" content="#fff200">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+<div style="display: none;">
+    <svg id="custom-sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <symbol viewBox="0 0 12 8" fill="currentColor" id="i-arrow-xs">
+            <path d="M1.24149 7.52345C0.995002 7.78444 0.583612 7.79619 0.322626 7.54971C0.0616388 7.30322 0.0498848 6.89183 0.296372 6.63084L1.24149 7.52345ZM5.9997 1.53869L5.52714 1.09238C5.64993 0.962367 5.82087 0.888687 5.9997 0.888687C6.17853 0.888687 6.34947 0.962367 6.47226 1.09238L5.9997 1.53869ZM11.703 6.63084C11.9495 6.89183 11.9378 7.30322 11.6768 7.54971C11.4158 7.79619 11.0044 7.78444 10.7579 7.52345L11.703 6.63084ZM0.296372 6.63084L5.52714 1.09238L6.47226 1.98499L1.24149 7.52345L0.296372 6.63084ZM6.47226 1.09238L11.703 6.63084L10.7579 7.52345L5.52714 1.98499L6.47226 1.09238Z"             />
+        </symbol>
+        <symbol viewBox="0 0 24 24" fill="currentColor" id="i-close">
+            <path d="M18 6L6 18" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 6L18 18" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol viewBox="0 0 12 10" fill="currentColor" id="i-check">
+            <path d="M11 1L4.375 9L1 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+    </svg>
+</div>
+
+<main>
+    <div class="container">
+        <div class="o2k-cart">
+            <div class="o2k-cart__left">
+                <form action="">
+
+                    <div class="o2k-section o2k-section--sm">
+                        <div class="o2k-title">Город получения</div>
+                        <div class="o2k-form">
+                            <div class="o2k-grid__row">
+                                <div class="o2k-grid__col o2k-grid__col--full o2k-grid__col--no-indent">
+                                    <div class="o2k-form__field">
+                                        <input type="text" required class="o2k-input o2k-form__input"
+                                               floating-label="Населенный пункт <span class='form__important'>*</span>">
+                                        <div class="form__input-caption">Полные фамилия, имя и отчество могут
+                                            потребоваться
+                                            при получении заказа
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o2k-section o2k-section--sm o2k-section--sm">
+
+                        <div class="o2k-title o2k-title__between">Данные получателя
+                            <a class="o2k-title__caption o2k-link" href="##">
+                                <span class="o2k-link__text">Юридическое лицо</span></a>
+                        </div>
+
+
+                        <div class="o2k-form">
+                            <div class="o2k-grid__row">
+                                <div class="o2k-grid__col o2k-grid__col--full">
+                                    <div class="o2k-form__field">
+                                        <input type="text" class="o2k-input o2k-form__input" required
+                                               floating-label="Имя и Фамилия по паспорту * <span class='o2k-form__important'>*</span>">
+                                        <div class="o2k-form__input-caption">Полные фамилия, имя и отчество могут
+                                            потребоваться
+                                            при получении заказа
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="o2k-grid__row">
+                                <div class="o2k-grid__col o2k-grid__col--evenly">
+                                    <div class="o2k-form__field">
+                                        <input type="email" required class="o2k-input o2k-form__input"
+                                               floating-label="Электронная почта * <span class='o2k-form__important'>*</span>">
+                                        <div class="o2k-form__input-caption">Для согласования времени доставки</div>
+                                    </div>
+                                </div>
+                                <div class="o2k-grid__col o2k-grid__col--evenly">
+                                    <div class="o2k-form__field">
+                                        <input type="tel" class="o2k-input js-phone o2k-form__input"
+                                               floating-label="Номер телефона *">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Адрес доставки -->
+                    <div class="o2k-section o2k-section--sm">
+                        <div class="o2k-title">Адрес доставки</div>
+                        <div class="o2k-form">
+                            <div class="o2k-grid__row">
+                                <div class="o2k-grid__col grid__col--full">
+                                    <div class="o2k-form__field">
+                                        <input type="text" class="o2k-input o2k-form__input" required
+                                               floating-label="Улица <span class='o2k-form__important'>*</span>">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="o2k-grid__row">
+                                <div class="o2k-grid__col go2k-rid__col--evenly">
+                                    <div class="o2k-form__field">
+                                        <input type="text" class="o2k-input o2k-form__input" required
+                                               floating-label="Дом <span class='o2k-form__important'>*</span>">
+                                    </div>
+                                </div>
+                                <div class="o2k-grid__col o2k-grid__col--evenly">
+                                    <div class="o2k-form__field">
+                                        <input type="text" class="o2k-input o2k-form__input"
+                                               floating-label="Квартира *">
+                                    </div>
+                                </div>
+                                <div class="o2k-grid__col o2k-grid__col--evenly">
+                                    <div class="o2k-form__field">
+                                        <input type="number" class="o2k-input o2k-form__input"
+                                               floating-label="Индекс *">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Способ доставки -->
+                    <div class="o2k-section o2k-section--sm o2k-type-delivery">
+                        <div class="o2k-title">Способ доставки</div>
+                        <div class="o2k-type-delivery__list">
+                            <div class="o2k-type-delivery__item active">
+                                <div class="o2k-type-delivery__item-row">
+                                    <span class="o2k-fz-16">Почтой россии</span>
+                                    <span class="o2k-fz-15">199 руб.</span>
+                                </div>
+                                <div class="o2k-type-delivery__item-row o2k-type-delivery__item-row--caption">
+                                    <span>В ближайшее отделение почты России</span>
+                                    <span>с 25.02</span>
+                                </div>
+                            </div>
+                            <div class="o2k-type-delivery__item">
+                                <div class="o2k-type-delivery__item-row">
+                                    <span class="o2k-fz-16">Курьером</span>
+                                    <span class="o2k-fz-15">299 руб.</span>
+                                </div>
+                                <div class="o2k-type-delivery__item-row o2k-type-delivery__item-row--caption">
+                                    <span>До дверей в удобное для вас время</span>
+                                    <span>Завтра</span>
+                                </div>
+                            </div>
+                            <div class="o2k-type-delivery__item">
+                                <div class="o2k-type-delivery__item-row">
+                                    <span class="o2k-fz-16">Пункт выдачи</span>
+                                    <span class="o2k-fz-15">Бесплатно</span>
+                                </div>
+                                <div class="o2k-type-delivery__item-row o2k-type-delivery__item-row--caption">
+                                    <span>в 32 пункта выдачи</span>
+                                    <span>Завтра</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- пункт самовывоза -->
+                    <div class="o2k-section o2k-section--sm">
+                        <div class="o2k-title">Выбранный пункт самовывоза</div>
+
+                        <div class="o2k-how-pickup">
+                            <div class="o2k-how-pickup__address">Чебоксары, Тракторостроителей пр-кт, д. 9</div>
+                            <div class="o2k-how-pickup__address-caption">Можно забрать в понедельник, 10 февраля</div>
+
+                            <div class="o2k-how-pickup__time">
+                                Режим работы: <span class="o2k-text-accent">Ежедневно 9:00-20:00</span>
+                            </div>
+                            <div class="o2k-how-pickup__buttons">
+                                <button class="o2k-button o2k-button--sm o2k-button--empty-bg">Подробнее</button>
+                                <button class="o2k-button o2k-button--sm o2k-button--empty-bg">Выбрать другой</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Способ оплаты -->
+                    <div class="o2k-o2k-section o2k-o2k-section--sm o2k-o2k-type-pay">
+                        <div class="o2k-o2k-title">Способ оплаты</div>
+                        <div class="o2k-o2k-radio">
+                            <input class="o2k-o2k-custom-radio" type="radio" id="c1" name="color" value="indigo">
+                            <label class="o2k-o2k-custom-radio__label" for="c1">
+                                <div>
+                                    <span class="o2k-o2k-custom-radio__label-text">Банковской картой онлайн</span>
+                                    <span class="o2k-o2k-custom-radio__caption">Скидка 3%</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="o2k-o2k-radio">
+                            <input class="o2k-o2k-custom-radio" type="radio" id="c2" name="color" value="indigo">
+                            <label class="o2k-o2k-custom-radio__label" for="c2">
+                                <div>
+                                    <span class="o2k-o2k-custom-radio__label-text">Наличными при получении</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="o2k-o2k-radio">
+                            <input class="o2k-o2k-custom-radio" type="radio" id="c2" name="color" value="indigo">
+                            <label class="o2k-o2k-custom-radio__label" for="c2">
+                                <div>
+                                    <span class="o2k-custom-radio__label-text">Банковской картой при получении</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Комментарий к заказу -->
+                    <div class="o2k-section o2k-section--sm">
+                        <div class="o2k-title">Комментарий к заказу</div>
+                        <div class="o2k-form__textarea">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Товары -->
+                    <div class="o2k-section o2k-cart-list-wrapper">
+                        <div class="o2k-title">
+                            <span>Товары</span>
+                            <span class="o2k-title__caption o2k-link o2k-title__text-left js-toggler">
+                                <span class="o2k-link__text">Свернуть</span>
+                                <i class="o2k-icon o2k-link__icon-right">
+                                    <svg class="o2k-icon__arrow">
+                                        <use xlink:href="#i-arrow-xs"></use>
+                                    </svg>
+                                </i>
+                            </span>
+                        </div>
+                        <div class="o2k-cart__list">
+                            <div class="o2k-cart-item">
+                                <div class="o2k-cart-item__content">
+                                    <picture class="o2k-cart-item__img">
+                                        <source type="image/png" media="(min-width: 1921px)" srcset="images/cat-1.png">
+                                        <img src="images/cat-1.png">
+                                    </picture>
+                                    <div class="o2k-cart-item__right-col">
+                                        <div class="o2k-cart-item__info">
+                                            <a href="##" class="o2k-link o2k-link--inner o2k-cart-item__info-title">
+                                                <span class="o2k-link__text">Рюкзак Xiaomi Blade, серый</span>
+                                            </a>
+                                            <div class="o2k-properties-item">
+                                                <div class="o2k-properties-item__label">
+                                                    Артикул:
+                                                </div>
+                                                <div class="o2k-properties-item__caption">
+                                                    123456789
+                                                </div>
+                                            </div>
+                                            <div class="o2k-properties-item">
+                                                <div class="o2k-properties-item__label">
+                                                    Цвет:
+                                                </div>
+                                                <div class="o2k-properties-item__caption">
+                                                    Серый
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="o2k-price">
+                                            <div class="o2k-price__current">4900 руб.</div>
+                                            <div class="o2k-price__old">4 700 руб.</div>
+                                        </div>
+                                        <div class="o2k-qt-form">
+                                            <form id='myform' method='POST' action='#'>
+                                                <div class="o2k-qt-form__fields">
+                                                    <input type='button' value='-' class='o2k-qt-form__btn'
+                                                           field='quantity'/>
+                                                    <input type='text' name='quantity' value='0'
+                                                           class='o2k-qt-form__input'/>
+                                                    <input type='button' value='+' class='o2k-qt-form__btn'
+                                                           field='quantity'/>
+                                                </div>
+                                                <span class="o2k-qt-form__price">1 450 руб./шт</span>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="o2k-cart-item__delete">
+                                        <i class="o2k-icon">
+                                            <svg class="o2k-icon__close">
+                                                <use xlink:href="#i-close"></use>
+                                            </svg>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o2k-cart-item">
+                                <div class="o2k-cart-item__content">
+                                    <picture class="o2k-cart-item__img">
+                                        <source type="image/png" media="(min-width: 1921px)" srcset="images/cat-1.png">
+                                        <img src="images/cat-1.png">
+                                    </picture>
+                                    <div class="o2k-cart-item__right-col">
+                                        <div class="o2k-cart-item__info">
+                                            <a href="##" class="o2k-link o2k-link--inner o2k-cart-item__info-title">
+                                                <span class="o2k-link__text">Рюкзак Xiaomi Blade, серый</span>
+                                            </a>
+                                            <div class="o2k-properties-item">
+                                                <div class="o2k-properties-item__label">
+                                                    Артикул:
+                                                </div>
+                                                <div class="o2k-properties-item__caption">
+                                                    123456789
+                                                </div>
+                                            </div>
+                                            <div class="o2k-properties-item">
+                                                <div class="o2k-properties-item__label">
+                                                    Цвет:
+                                                </div>
+                                                <div class="o2k-properties-item__caption">
+                                                    Серый
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="o2k-price">
+                                            <div class="o2k-price__current">4900 руб.</div>
+                                            <div class="o2k-price__old">4 700 руб.</div>
+                                        </div>
+                                        <div class="o2k-qt-form">
+                                            <form id='myform' method='POST' action='#'>
+                                                <div class="o2k-qt-form__fields">
+                                                    <input type='button' value='-' class='o2k-qt-form__btn'
+                                                           field='quantity'/>
+                                                    <input type='text' name='quantity' value='0'
+                                                           class='o2k-qt-form__input'/>
+                                                    <input type='button' value='+' class='o2k-qt-form__btn'
+                                                           field='quantity'/>
+                                                </div>
+                                                <span class="o2k-qt-form__price">1 450 руб./шт</span>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="o2k-cart-item__delete">
+                                        <i class="o2k-icon">
+                                            <svg class="o2k-icon__close">
+                                                <use xlink:href="#i-close"></use>
+                                            </svg>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o2k-checkbox">
+                            <input class="o2k-checkbox__input" type="checkbox" id="check" name="check" value="">
+                            <label class="o2k-checkbox__label" for="check">Я согласен на обработку &nbsp;<a class="o2k-link"
+                                                                                                        href="##">персональных
+                                данных</a></label>
+                        </div>
+                        <div class="o2k-cart__buttons">
+                            <button class="o2k-button o2k-button--fix-btn">
+                                <span class="o2k-button__content">Оформить заказ</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="o2k-cart__right">
+                <div class="o2k-small-cart js-sticky-side">
+                    <div class="o2k-small-cart__content">
+                        <div class="o2k-title">Ваша корзина</div>
+                        <div class="o2k-form-promo">
+                            <div class="o2k-form-promo__grid">
+                                <div class="o2k-form-promo__field">
+                                    <input type="text" placeholder="Введите промокод" value="">
+                                </div>
+                                <div class="o2k-form-promo__button">
+                                    <button class="o2k-button o2k-button--sm o2k-button--empty-bg">Применить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="o2k-small-cart__items">
+                            <div class="o2k-small-cart__item">
+                                <div class="o2k-small-cart__item-content">
+                                    <picture class="o2k-small-cart__item-img">
+                                        <source type="image/png" media="(min-width: 1921px)" srcset="images/cat-2.png">
+                                        <img src="images/cat-2.png">
+                                    </picture>
+                                    <div class="o2k-small-cart__item-info">
+                                        <div class="o2k-small-cart__item-name">Рюкзак Xiaomi Blade, серый</div>
+                                        <div class="o2k-small-cart__item-price">1 450 руб.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="o2k-small-cart__item">
+                                <div class="o2k-small-cart__item-content">
+                                    <picture class="o2k-small-cart__item-img">
+                                        <source type="image/png" media="(min-width: 1921px)" srcset="images/cat-3.png">
+                                        <img src="images/cat-3.png">
+                                    </picture>
+                                    <div class="o2k-small-cart__item-info">
+                                        <div class="o2k-small-cart__item-name">Часы CASIO W-800, водонепроницаемые</div>
+                                        <div class="o2k-small-cart__item-price">3 600 руб.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o2k-cart-short-info">
+                            <div class="o2k-cart-short-info__row">
+                                <span class="o2k-cart-short-info__col">Сумма заказа:</span>
+                                <span class="o2k-cart-short-info__col">5 050 руб.</span>
+                            </div>
+                            <div class="o2k-cart-short-info__row">
+                                <span class="o2k-cart-short-info__col">Доставка:</span>
+                                <span class="o2k-cart-short-info__col">Бесплатно</span>
+                            </div>
+                            <div class="o2k-cart-short-info__row">
+                                <span class="o2k-cart-short-info__col">Бонусы для начисления:</span>
+                                <span class="o2k-cart-short-info__col">168 Б</span>
+                            </div>
+                        </div>
+                        <div class="o2k-small-cart__total-price">
+                            <span>Итого</span>
+                            <span>5 050 руб.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="js/app.min.js"></script>
+
+</body>
+</html>
