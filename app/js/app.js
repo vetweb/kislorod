@@ -46,12 +46,13 @@ const Floaty = () => {
 		setLabel(input);
 	});
 }
+
 import IMask from 'imask';
 
 document.addEventListener('DOMContentLoaded', () => {
-	let element = document.getElementsByClassName('js-phone');
-	let maskOptions = {
-		mask: '+{7}(000)000-00-00'
-	};
-	let mask = IMask(element, maskOptions);
+	// let element = document.getElementsByClassName('js-phone');
+	// let maskOptions = {
+	// 	mask: '+{7}(000)000-00-00'
+	// };
+	// let mask = IMask(element, maskOptions);
 })

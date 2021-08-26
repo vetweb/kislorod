@@ -58,7 +58,7 @@
 .checkbox__input:checked + .checkbox__label::before {
     border-color: #0b76ef;
     background-color: #0b76ef;
-    background-image: url("/images/icons/i-check.svg");
+    background-image: url("../images/icons/i-check.svg");
 }
 
 /* стили для чекбокса, находящегося в состоянии disabled */
