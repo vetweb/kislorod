@@ -1,0 +1,48 @@
+.type-delivery {
+    &__list {
+        max-width: 100%;
+
+        @include md-up {
+            max-width: $content-xs;
+        }
+    }
+
+    &__item {
+        width: 100%;
+        padding: 18px 23px 18px 23px;
+        margin-bottom: 20px;
+        border: 1px solid $c-border;
+        border-radius: 3px;
+        font-weight: 400;
+        cursor: pointer;
+        @include tr-base;
+
+        &:last-of-type,
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.active {
+            border-color: $c-accent;
+        }
+
+        &:hover {
+            box-shadow: 0 2px 7px rgba(120, 137, 149, 0.254784);
+        }
+    }
+
+    &__item-row {
+        margin-bottom: 8px;
+        @include flex-base(flex-start, space-between);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-row--caption {
+        color: $c-text-second;
+        font-size: 13px;
+        line-height: 16px;
+    }
+}

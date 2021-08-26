@@ -1,0 +1,14 @@
+.properties-item {
+    @include flex-base;
+    font-size: 13px;
+
+    &__label {
+        margin-right: 5px;
+        margin-bottom: 5px;
+        color: $gray;
+    }
+
+    &__caption {
+
+    }
+}

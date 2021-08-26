@@ -1,0 +1,15 @@
+.cart-short-info {
+    padding-bottom: 34px;
+    border-bottom: 1px solid $c-border;
+
+    &__row {
+        margin-bottom: 10px;
+        @include flex-base(flex-start, space-between);
+    }
+
+    &__col {
+        font-size: 14px;
+        font-weight: 400;
+        color: $c-text-second;
+    }
+}

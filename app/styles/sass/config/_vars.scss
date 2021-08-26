@@ -1,0 +1,46 @@
+// USER VARIABLES SECTION
+
+$black: #000000;
+$white: #ffffff;
+$blue: #0077E2;
+$gray: #788995;
+$gray-white: #DDE3E8;
+$gray-light: #F8FAFB;
+
+$c-bg: $gray-light;
+$c-border: $gray-white;
+$c-accent: $blue;
+$c-accent-hov: #026dcd;
+$c-text: #1B2125;
+$c-text-second: $gray;
+$c-error: red;
+
+$fontsize: 16px; // Body Font Size
+$lineheight: 1.2; // Document Line Height
+
+// Gutter & indent
+$grid-gutter-width: 15px;
+$gutter: $grid-gutter-width;
+
+// Sizes
+$xl_width: 1600px;
+$lg_width: 1200px;
+$lg_width_inner: 1400px;
+$md_width-2: 1025px;
+$md_width: 992px;
+$sm_width: 768px;
+$csx_width: 480px;
+$xs_width: 320px;
+
+$content-md: 760px;
+$content-sm: 560px;
+$content-xs: 460px;
+
+// Font Sizes
+$fz-24: 24px;
+$lh-29: 29px;
+
+// Indents
+$indent-xs: 10px;
+$indent-sm: 20px;
+$indent-lg: 38px;

@@ -1,0 +1,25 @@
+.title {
+    margin-bottom: 20px;
+    font-size: $fz-24;
+    line-height: $lh-29;
+    font-weight: 300;
+
+    @include md-up {
+        margin-bottom: $indent-lg;
+    }
+
+    &__text-left {
+        margin-left: 40px;
+    }
+
+    &__caption {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    &__between {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,9 @@
+@mixin flex-base($align-items: flex-start, $justify-content: flex-start) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+@mixin tr-base($all: all) {
+    transition: $all .3s ease;
+}

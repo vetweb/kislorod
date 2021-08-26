@@ -1,0 +1,69 @@
+.form {
+
+    $input-height-lg: 54px;
+    $input-height-sm: 54px;
+
+    &__field {
+        position: relative;
+    }
+
+    &__label {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        height: $input-height-lg;
+        @include flex-base(center, flex-start);
+        font-size: 15px;
+        line-height: 18px;
+        pointer-events: none;
+        color: $c-text-second;
+        @include tr-base();
+    }
+
+    &__important {
+        color: $c-error;
+    }
+
+    &__input {
+        position: relative;
+        height: $input-height-lg;
+        width: 100%;
+        padding: 0 20px;
+        appearance: none;
+        border: 1px solid $c-border;
+        outline: none;
+        @include tr-base;
+
+        &:focus {
+            border-bottom-color: $c-border;
+        }
+
+        &:focus + .floating-label {
+            color: $c-text-second;
+        }
+    }
+
+    &__textarea {
+        border: 1px solid $c-border;
+        border-radius: 3px;
+
+        textarea {
+            width: 100%;
+            height: 90px;
+            border: 0;
+            margin: 0;
+            padding: 19px 24px;
+        }
+    }
+
+    &__input-caption {
+        margin-top: 8px;
+        font-size: 12px;
+        line-height: 14px;
+        color: $c-text-second;
+    }
+}
+
+.floating-label-active {
+    transform: translate(-20px, -70%);
+}

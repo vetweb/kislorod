@@ -1,0 +1,64 @@
+.how-pickup {
+    padding: 26px 24px;
+    border: 1px solid $c-border;
+    border-radius: 3px;
+
+    @include md-up {
+        padding: 20px 24px 27px;
+    }
+
+    &__address {
+        font-size: 14px;
+        margin-bottom: 10px;
+
+        @include md-up {
+            margin-bottom: 4px;
+            font-size: 16px;
+        }
+    }
+
+    &__address-caption {
+        color: $c-text-second;
+        font-size: 11px;
+
+        @include md-up {
+            font-size: 13px;
+        }
+    }
+
+    &__time {
+        margin-top: 12px;
+        font-size: 11px;
+
+        @include md-up {
+            margin-top: 14px;
+            font-size: 12px;
+        }
+    }
+
+    &__buttons {
+        margin-top: 15px;
+
+        @include md-up {
+            margin-top: 20px;
+        }
+
+        .button {
+            margin-bottom: 10px;
+            margin-right: 24px;
+            font-size: 11px;
+            padding: 0 25px;
+            text-transform: uppercase;
+
+            &:last-of-type,
+            &:last-child {
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+
+            @include md-up {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.button {
+    padding: 18px 19px 17px 19px;
+    background: $c-accent;
+    border-radius: 3px;
+    box-shadow: 0 2px 7px rgba(120, 137, 149, 0.254784);
+    border: 0;
+    cursor: pointer;
+    @include tr-base();
+    width: 100%;
+
+    @include md-up {
+        width: auto;
+    }
+
+    &:hover {
+        background: $c-accent-hov;
+    }
+
+    &__content {
+        color: $white;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    &--fix-btn {
+        width: 100%;
+
+        @include md-up {
+            max-width: 250px;
+        }
+
+    }
+
+    &--sm {
+        padding: 0 14px;
+        height: 36px;
+    }
+
+    &--sm-fix {
+        @include md-up {
+            max-width: 120px;
+        }
+    }
+
+    &--empty-bg {
+        color: $c-accent;
+        background: none;
+        border: 1px solid $c-accent;
+        filter: drop-shadow(0px 2px 7px rgba(120, 137, 149, 0.254784));
+
+        &:hover {
+            color: $white;
+            background: $c-accent;
+        }
+    }
+
+    @include md-up {
+
+    }
+}

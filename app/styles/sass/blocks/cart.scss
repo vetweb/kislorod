@@ -1,0 +1,39 @@
+.cart {
+
+    position: relative;
+
+    @include lg {
+        @include flex-base();
+    }
+
+    &__list {
+        margin-bottom: 30px;
+    }
+
+    &__buttons {
+        margin-top: 80px;
+    }
+
+    &__left {
+        max-width: $content-md;
+        flex: 0 0 auto;
+        flex-grow: 1;
+    }
+
+    &__right {
+        flex: 0 0 auto;
+        flex-grow: 0;
+        z-index: 10;
+
+        @include md-up {
+            position: absolute;
+            right: 0;
+            top: 0;
+            max-width: 420px;
+        }
+
+        @include lg {
+            max-width: $content-xs;
+        }
+    }
+}

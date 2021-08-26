@@ -1,0 +1,55 @@
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Inter', 'Arial', sans-serif;
+    color: $c-text;
+}
+
+input, textarea {
+    outline: none;
+
+    &:focus:required:invalid {
+        border-color: red;
+    }
+
+    &:required:valid {
+        border-color: green;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+
+.fz-15 {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.fz-13 {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.section {
+    margin-bottom: 60px;
+
+    &--sm {
+        max-width: $content-sm;
+    }
+
+    &--flex-between {
+        @include flex-base(baseline, space-between);
+    }
+}
+
+.text-accent {
+    color: $c-text-second;
+}

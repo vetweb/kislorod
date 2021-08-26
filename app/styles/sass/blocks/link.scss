@@ -1,0 +1,34 @@
+.link {
+    position: relative;
+    color: $c-accent;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 300;
+
+    &__text {
+        @include tr-base;
+        border-bottom: 1px solid;
+    }
+
+    &:hover {
+        .link__text {
+            border-bottom-color: transparent;
+        }
+    }
+
+    &--inner {
+        .link__text {
+            border-bottom-color: transparent;
+        }
+
+        &:hover {
+            .link__text {
+                border-bottom-color: $c-accent;
+            }
+        }
+    }
+
+    .link__icon-right {
+        margin-left: $indent-xs;
+    }
+}
